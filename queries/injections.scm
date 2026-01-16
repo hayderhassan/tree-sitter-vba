@@ -43,8 +43,8 @@
 ;
 ; Comment-based injections
 ; Example:
-;   ' language=sql
-;   "SELECT * FROM Users"
+; ' language=sql
+; "SELECT * FROM Users"
 ;
 ((comment) @comment
   (#match? @comment "(?i)language=sql")

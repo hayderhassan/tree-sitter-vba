@@ -20,21 +20,6 @@
     }
   },
   {
-    "type": "array_dimensions",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": true,
-      "types": [
-        {
-          "type": "expression",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
     "type": "assignment_statement",
     "named": true,
     "fields": {
@@ -47,36 +32,17 @@
             "named": true
           }
         ]
+      },
+      "value": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "expression",
+            "named": true
+          }
+        ]
       }
-    },
-    "children": {
-      "multiple": false,
-      "required": true,
-      "types": [
-        {
-          "type": "expression",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "attribute_statement",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": true,
-      "types": [
-        {
-          "type": "expression",
-          "named": true
-        },
-        {
-          "type": "identifier",
-          "named": true
-        }
-      ]
     }
   },
   {
@@ -139,26 +105,6 @@
           },
           {
             "type": ">=",
-            "named": false
-          },
-          {
-            "type": "And",
-            "named": false
-          },
-          {
-            "type": "Like",
-            "named": false
-          },
-          {
-            "type": "Mod",
-            "named": false
-          },
-          {
-            "type": "Or",
-            "named": false
-          },
-          {
-            "type": "Xor",
             "named": false
           },
           {
@@ -227,231 +173,15 @@
       "required": true,
       "types": [
         {
-          "type": "expression",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "case_clause",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": true,
-      "types": [
-        {
-          "type": "assignment_statement",
+          "type": "call_expression",
           "named": true
         },
         {
-          "type": "call_statement",
+          "type": "indexed_expression",
           "named": true
         },
         {
-          "type": "case_expression",
-          "named": true
-        },
-        {
-          "type": "const_declaration",
-          "named": true
-        },
-        {
-          "type": "do_statement",
-          "named": true
-        },
-        {
-          "type": "empty_statement",
-          "named": true
-        },
-        {
-          "type": "erase_statement",
-          "named": true
-        },
-        {
-          "type": "error_statement",
-          "named": true
-        },
-        {
-          "type": "exit_statement",
-          "named": true
-        },
-        {
-          "type": "for_each_statement",
-          "named": true
-        },
-        {
-          "type": "for_statement",
-          "named": true
-        },
-        {
-          "type": "goto_statement",
-          "named": true
-        },
-        {
-          "type": "if_statement",
-          "named": true
-        },
-        {
-          "type": "label_statement",
-          "named": true
-        },
-        {
-          "type": "line_continuation_statement",
-          "named": true
-        },
-        {
-          "type": "on_error_statement",
-          "named": true
-        },
-        {
-          "type": "redim_statement",
-          "named": true
-        },
-        {
-          "type": "select_case_statement",
-          "named": true
-        },
-        {
-          "type": "stop_statement",
-          "named": true
-        },
-        {
-          "type": "variable_declaration",
-          "named": true
-        },
-        {
-          "type": "while_statement",
-          "named": true
-        },
-        {
-          "type": "with_statement",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "case_else_clause",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "assignment_statement",
-          "named": true
-        },
-        {
-          "type": "call_statement",
-          "named": true
-        },
-        {
-          "type": "const_declaration",
-          "named": true
-        },
-        {
-          "type": "do_statement",
-          "named": true
-        },
-        {
-          "type": "empty_statement",
-          "named": true
-        },
-        {
-          "type": "erase_statement",
-          "named": true
-        },
-        {
-          "type": "error_statement",
-          "named": true
-        },
-        {
-          "type": "exit_statement",
-          "named": true
-        },
-        {
-          "type": "for_each_statement",
-          "named": true
-        },
-        {
-          "type": "for_statement",
-          "named": true
-        },
-        {
-          "type": "goto_statement",
-          "named": true
-        },
-        {
-          "type": "if_statement",
-          "named": true
-        },
-        {
-          "type": "label_statement",
-          "named": true
-        },
-        {
-          "type": "line_continuation_statement",
-          "named": true
-        },
-        {
-          "type": "on_error_statement",
-          "named": true
-        },
-        {
-          "type": "redim_statement",
-          "named": true
-        },
-        {
-          "type": "select_case_statement",
-          "named": true
-        },
-        {
-          "type": "stop_statement",
-          "named": true
-        },
-        {
-          "type": "variable_declaration",
-          "named": true
-        },
-        {
-          "type": "while_statement",
-          "named": true
-        },
-        {
-          "type": "with_statement",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "case_expression",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": true,
-      "types": [
-        {
-          "type": "expression",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "const_declaration",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": true,
-      "types": [
-        {
-          "type": "const_declarator",
+          "type": "member_access",
           "named": true
         }
       ]
@@ -488,201 +218,7 @@
     }
   },
   {
-    "type": "do_statement",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "assignment_statement",
-          "named": true
-        },
-        {
-          "type": "call_statement",
-          "named": true
-        },
-        {
-          "type": "const_declaration",
-          "named": true
-        },
-        {
-          "type": "do_statement",
-          "named": true
-        },
-        {
-          "type": "empty_statement",
-          "named": true
-        },
-        {
-          "type": "erase_statement",
-          "named": true
-        },
-        {
-          "type": "error_statement",
-          "named": true
-        },
-        {
-          "type": "exit_statement",
-          "named": true
-        },
-        {
-          "type": "expression",
-          "named": true
-        },
-        {
-          "type": "for_each_statement",
-          "named": true
-        },
-        {
-          "type": "for_statement",
-          "named": true
-        },
-        {
-          "type": "goto_statement",
-          "named": true
-        },
-        {
-          "type": "if_statement",
-          "named": true
-        },
-        {
-          "type": "label_statement",
-          "named": true
-        },
-        {
-          "type": "line_continuation_statement",
-          "named": true
-        },
-        {
-          "type": "on_error_statement",
-          "named": true
-        },
-        {
-          "type": "redim_statement",
-          "named": true
-        },
-        {
-          "type": "select_case_statement",
-          "named": true
-        },
-        {
-          "type": "stop_statement",
-          "named": true
-        },
-        {
-          "type": "variable_declaration",
-          "named": true
-        },
-        {
-          "type": "while_statement",
-          "named": true
-        },
-        {
-          "type": "with_statement",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "else_clause",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "assignment_statement",
-          "named": true
-        },
-        {
-          "type": "call_statement",
-          "named": true
-        },
-        {
-          "type": "const_declaration",
-          "named": true
-        },
-        {
-          "type": "do_statement",
-          "named": true
-        },
-        {
-          "type": "empty_statement",
-          "named": true
-        },
-        {
-          "type": "erase_statement",
-          "named": true
-        },
-        {
-          "type": "error_statement",
-          "named": true
-        },
-        {
-          "type": "exit_statement",
-          "named": true
-        },
-        {
-          "type": "for_each_statement",
-          "named": true
-        },
-        {
-          "type": "for_statement",
-          "named": true
-        },
-        {
-          "type": "goto_statement",
-          "named": true
-        },
-        {
-          "type": "if_statement",
-          "named": true
-        },
-        {
-          "type": "label_statement",
-          "named": true
-        },
-        {
-          "type": "line_continuation_statement",
-          "named": true
-        },
-        {
-          "type": "on_error_statement",
-          "named": true
-        },
-        {
-          "type": "redim_statement",
-          "named": true
-        },
-        {
-          "type": "select_case_statement",
-          "named": true
-        },
-        {
-          "type": "stop_statement",
-          "named": true
-        },
-        {
-          "type": "variable_declaration",
-          "named": true
-        },
-        {
-          "type": "while_statement",
-          "named": true
-        },
-        {
-          "type": "with_statement",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "elseif_clause",
+    "type": "const_statement",
     "named": true,
     "fields": {},
     "children": {
@@ -690,155 +226,14 @@
       "required": true,
       "types": [
         {
-          "type": "assignment_statement",
-          "named": true
-        },
-        {
-          "type": "call_statement",
-          "named": true
-        },
-        {
-          "type": "const_declaration",
-          "named": true
-        },
-        {
-          "type": "do_statement",
-          "named": true
-        },
-        {
-          "type": "empty_statement",
-          "named": true
-        },
-        {
-          "type": "erase_statement",
-          "named": true
-        },
-        {
-          "type": "error_statement",
-          "named": true
-        },
-        {
-          "type": "exit_statement",
-          "named": true
-        },
-        {
-          "type": "expression",
-          "named": true
-        },
-        {
-          "type": "for_each_statement",
-          "named": true
-        },
-        {
-          "type": "for_statement",
-          "named": true
-        },
-        {
-          "type": "goto_statement",
-          "named": true
-        },
-        {
-          "type": "if_statement",
-          "named": true
-        },
-        {
-          "type": "label_statement",
-          "named": true
-        },
-        {
-          "type": "line_continuation_statement",
-          "named": true
-        },
-        {
-          "type": "on_error_statement",
-          "named": true
-        },
-        {
-          "type": "redim_statement",
-          "named": true
-        },
-        {
-          "type": "select_case_statement",
-          "named": true
-        },
-        {
-          "type": "stop_statement",
-          "named": true
-        },
-        {
-          "type": "variable_declaration",
-          "named": true
-        },
-        {
-          "type": "while_statement",
-          "named": true
-        },
-        {
-          "type": "with_statement",
+          "type": "const_declarator",
           "named": true
         }
       ]
     }
   },
   {
-    "type": "empty_statement",
-    "named": true,
-    "fields": {}
-  },
-  {
-    "type": "enum_definition",
-    "named": true,
-    "fields": {
-      "name": {
-        "multiple": false,
-        "required": true,
-        "types": [
-          {
-            "type": "identifier",
-            "named": true
-          }
-        ]
-      }
-    },
-    "children": {
-      "multiple": true,
-      "required": true,
-      "types": [
-        {
-          "type": "enum_member",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "enum_member",
-    "named": true,
-    "fields": {
-      "name": {
-        "multiple": false,
-        "required": true,
-        "types": [
-          {
-            "type": "identifier",
-            "named": true
-          }
-        ]
-      }
-    },
-    "children": {
-      "multiple": false,
-      "required": false,
-      "types": [
-        {
-          "type": "expression",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "erase_statement",
+    "type": "dim_statement",
     "named": true,
     "fields": {},
     "children": {
@@ -846,22 +241,7 @@
       "required": true,
       "types": [
         {
-          "type": "identifier",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "error_statement",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": false,
-      "required": true,
-      "types": [
-        {
-          "type": "expression",
+          "type": "variable_declarator",
           "named": true
         }
       ]
@@ -916,248 +296,30 @@
     }
   },
   {
-    "type": "for_each_statement",
-    "named": true,
-    "fields": {
-      "var": {
-        "multiple": false,
-        "required": true,
-        "types": [
-          {
-            "type": "identifier",
-            "named": true
-          }
-        ]
-      }
-    },
-    "children": {
-      "multiple": true,
-      "required": true,
-      "types": [
-        {
-          "type": "assignment_statement",
-          "named": true
-        },
-        {
-          "type": "call_statement",
-          "named": true
-        },
-        {
-          "type": "const_declaration",
-          "named": true
-        },
-        {
-          "type": "do_statement",
-          "named": true
-        },
-        {
-          "type": "empty_statement",
-          "named": true
-        },
-        {
-          "type": "erase_statement",
-          "named": true
-        },
-        {
-          "type": "error_statement",
-          "named": true
-        },
-        {
-          "type": "exit_statement",
-          "named": true
-        },
-        {
-          "type": "expression",
-          "named": true
-        },
-        {
-          "type": "for_each_statement",
-          "named": true
-        },
-        {
-          "type": "for_statement",
-          "named": true
-        },
-        {
-          "type": "goto_statement",
-          "named": true
-        },
-        {
-          "type": "identifier",
-          "named": true
-        },
-        {
-          "type": "if_statement",
-          "named": true
-        },
-        {
-          "type": "label_statement",
-          "named": true
-        },
-        {
-          "type": "line_continuation_statement",
-          "named": true
-        },
-        {
-          "type": "on_error_statement",
-          "named": true
-        },
-        {
-          "type": "redim_statement",
-          "named": true
-        },
-        {
-          "type": "select_case_statement",
-          "named": true
-        },
-        {
-          "type": "stop_statement",
-          "named": true
-        },
-        {
-          "type": "variable_declaration",
-          "named": true
-        },
-        {
-          "type": "while_statement",
-          "named": true
-        },
-        {
-          "type": "with_statement",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
     "type": "for_statement",
     "named": true,
     "fields": {
-      "var": {
+      "from": {
         "multiple": false,
         "required": true,
         "types": [
           {
-            "type": "identifier",
-            "named": true
-          }
-        ]
-      }
-    },
-    "children": {
-      "multiple": true,
-      "required": true,
-      "types": [
-        {
-          "type": "assignment_statement",
-          "named": true
-        },
-        {
-          "type": "call_statement",
-          "named": true
-        },
-        {
-          "type": "const_declaration",
-          "named": true
-        },
-        {
-          "type": "do_statement",
-          "named": true
-        },
-        {
-          "type": "empty_statement",
-          "named": true
-        },
-        {
-          "type": "erase_statement",
-          "named": true
-        },
-        {
-          "type": "error_statement",
-          "named": true
-        },
-        {
-          "type": "exit_statement",
-          "named": true
-        },
-        {
-          "type": "expression",
-          "named": true
-        },
-        {
-          "type": "for_each_statement",
-          "named": true
-        },
-        {
-          "type": "for_statement",
-          "named": true
-        },
-        {
-          "type": "goto_statement",
-          "named": true
-        },
-        {
-          "type": "identifier",
-          "named": true
-        },
-        {
-          "type": "if_statement",
-          "named": true
-        },
-        {
-          "type": "label_statement",
-          "named": true
-        },
-        {
-          "type": "line_continuation_statement",
-          "named": true
-        },
-        {
-          "type": "on_error_statement",
-          "named": true
-        },
-        {
-          "type": "redim_statement",
-          "named": true
-        },
-        {
-          "type": "select_case_statement",
-          "named": true
-        },
-        {
-          "type": "stop_statement",
-          "named": true
-        },
-        {
-          "type": "variable_declaration",
-          "named": true
-        },
-        {
-          "type": "while_statement",
-          "named": true
-        },
-        {
-          "type": "with_statement",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "function_definition",
-    "named": true,
-    "fields": {
-      "modifier": {
-        "multiple": false,
-        "required": false,
-        "types": [
-          {
-            "type": "access_modifier",
+            "type": "expression",
             "named": true
           }
         ]
       },
-      "name": {
+      "to": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "expression",
+            "named": true
+          }
+        ]
+      },
+      "var": {
         "multiple": false,
         "required": true,
         "types": [
@@ -1181,23 +343,11 @@
           "named": true
         },
         {
-          "type": "const_declaration",
+          "type": "const_statement",
           "named": true
         },
         {
-          "type": "do_statement",
-          "named": true
-        },
-        {
-          "type": "empty_statement",
-          "named": true
-        },
-        {
-          "type": "erase_statement",
-          "named": true
-        },
-        {
-          "type": "error_statement",
+          "type": "dim_statement",
           "named": true
         },
         {
@@ -1205,7 +355,77 @@
           "named": true
         },
         {
-          "type": "for_each_statement",
+          "type": "expression",
+          "named": true
+        },
+        {
+          "type": "for_statement",
+          "named": true
+        },
+        {
+          "type": "goto_statement",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "if_statement",
+          "named": true
+        },
+        {
+          "type": "label_statement",
+          "named": true
+        },
+        {
+          "type": "stop_statement",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "function_definition",
+    "named": true,
+    "fields": {
+      "name": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "identifier",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "access_modifier",
+          "named": true
+        },
+        {
+          "type": "assignment_statement",
+          "named": true
+        },
+        {
+          "type": "call_statement",
+          "named": true
+        },
+        {
+          "type": "const_statement",
+          "named": true
+        },
+        {
+          "type": "dim_statement",
+          "named": true
+        },
+        {
+          "type": "exit_statement",
           "named": true
         },
         {
@@ -1225,23 +445,7 @@
           "named": true
         },
         {
-          "type": "line_continuation_statement",
-          "named": true
-        },
-        {
-          "type": "on_error_statement",
-          "named": true
-        },
-        {
           "type": "parameter_list",
-          "named": true
-        },
-        {
-          "type": "redim_statement",
-          "named": true
-        },
-        {
-          "type": "select_case_statement",
           "named": true
         },
         {
@@ -1250,18 +454,6 @@
         },
         {
           "type": "type",
-          "named": true
-        },
-        {
-          "type": "variable_declaration",
-          "named": true
-        },
-        {
-          "type": "while_statement",
-          "named": true
-        },
-        {
-          "type": "with_statement",
           "named": true
         }
       ]
@@ -1277,6 +469,25 @@
       "types": [
         {
           "type": "identifier",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "identifier",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "bare_identifier",
+          "named": true
+        },
+        {
+          "type": "bracketed_identifier",
           "named": true
         }
       ]
@@ -1299,31 +510,11 @@
           "named": true
         },
         {
-          "type": "const_declaration",
+          "type": "const_statement",
           "named": true
         },
         {
-          "type": "do_statement",
-          "named": true
-        },
-        {
-          "type": "else_clause",
-          "named": true
-        },
-        {
-          "type": "elseif_clause",
-          "named": true
-        },
-        {
-          "type": "empty_statement",
-          "named": true
-        },
-        {
-          "type": "erase_statement",
-          "named": true
-        },
-        {
-          "type": "error_statement",
+          "type": "dim_statement",
           "named": true
         },
         {
@@ -1332,10 +523,6 @@
         },
         {
           "type": "expression",
-          "named": true
-        },
-        {
-          "type": "for_each_statement",
           "named": true
         },
         {
@@ -1355,35 +542,7 @@
           "named": true
         },
         {
-          "type": "line_continuation_statement",
-          "named": true
-        },
-        {
-          "type": "on_error_statement",
-          "named": true
-        },
-        {
-          "type": "redim_statement",
-          "named": true
-        },
-        {
-          "type": "select_case_statement",
-          "named": true
-        },
-        {
           "type": "stop_statement",
-          "named": true
-        },
-        {
-          "type": "variable_declaration",
-          "named": true
-        },
-        {
-          "type": "while_statement",
-          "named": true
-        },
-        {
-          "type": "with_statement",
           "named": true
         }
       ]
@@ -1434,11 +593,6 @@
         ]
       }
     }
-  },
-  {
-    "type": "line_continuation_statement",
-    "named": true,
-    "fields": {}
   },
   {
     "type": "literal",
@@ -1521,26 +675,6 @@
     }
   },
   {
-    "type": "on_error_statement",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": false,
-      "required": false,
-      "types": [
-        {
-          "type": "identifier",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "option_statement",
-    "named": true,
-    "fields": {}
-  },
-  {
     "type": "parameter",
     "named": true,
     "fields": {
@@ -1601,427 +735,6 @@
     }
   },
   {
-    "type": "property_get_definition",
-    "named": true,
-    "fields": {
-      "modifier": {
-        "multiple": false,
-        "required": false,
-        "types": [
-          {
-            "type": "access_modifier",
-            "named": true
-          }
-        ]
-      },
-      "name": {
-        "multiple": false,
-        "required": true,
-        "types": [
-          {
-            "type": "identifier",
-            "named": true
-          }
-        ]
-      }
-    },
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "assignment_statement",
-          "named": true
-        },
-        {
-          "type": "call_statement",
-          "named": true
-        },
-        {
-          "type": "const_declaration",
-          "named": true
-        },
-        {
-          "type": "do_statement",
-          "named": true
-        },
-        {
-          "type": "empty_statement",
-          "named": true
-        },
-        {
-          "type": "erase_statement",
-          "named": true
-        },
-        {
-          "type": "error_statement",
-          "named": true
-        },
-        {
-          "type": "exit_statement",
-          "named": true
-        },
-        {
-          "type": "for_each_statement",
-          "named": true
-        },
-        {
-          "type": "for_statement",
-          "named": true
-        },
-        {
-          "type": "goto_statement",
-          "named": true
-        },
-        {
-          "type": "if_statement",
-          "named": true
-        },
-        {
-          "type": "label_statement",
-          "named": true
-        },
-        {
-          "type": "line_continuation_statement",
-          "named": true
-        },
-        {
-          "type": "on_error_statement",
-          "named": true
-        },
-        {
-          "type": "parameter_list",
-          "named": true
-        },
-        {
-          "type": "redim_statement",
-          "named": true
-        },
-        {
-          "type": "select_case_statement",
-          "named": true
-        },
-        {
-          "type": "stop_statement",
-          "named": true
-        },
-        {
-          "type": "type",
-          "named": true
-        },
-        {
-          "type": "variable_declaration",
-          "named": true
-        },
-        {
-          "type": "while_statement",
-          "named": true
-        },
-        {
-          "type": "with_statement",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "property_let_definition",
-    "named": true,
-    "fields": {
-      "modifier": {
-        "multiple": false,
-        "required": false,
-        "types": [
-          {
-            "type": "access_modifier",
-            "named": true
-          }
-        ]
-      },
-      "name": {
-        "multiple": false,
-        "required": true,
-        "types": [
-          {
-            "type": "identifier",
-            "named": true
-          }
-        ]
-      }
-    },
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "assignment_statement",
-          "named": true
-        },
-        {
-          "type": "call_statement",
-          "named": true
-        },
-        {
-          "type": "const_declaration",
-          "named": true
-        },
-        {
-          "type": "do_statement",
-          "named": true
-        },
-        {
-          "type": "empty_statement",
-          "named": true
-        },
-        {
-          "type": "erase_statement",
-          "named": true
-        },
-        {
-          "type": "error_statement",
-          "named": true
-        },
-        {
-          "type": "exit_statement",
-          "named": true
-        },
-        {
-          "type": "for_each_statement",
-          "named": true
-        },
-        {
-          "type": "for_statement",
-          "named": true
-        },
-        {
-          "type": "goto_statement",
-          "named": true
-        },
-        {
-          "type": "if_statement",
-          "named": true
-        },
-        {
-          "type": "label_statement",
-          "named": true
-        },
-        {
-          "type": "line_continuation_statement",
-          "named": true
-        },
-        {
-          "type": "on_error_statement",
-          "named": true
-        },
-        {
-          "type": "parameter_list",
-          "named": true
-        },
-        {
-          "type": "redim_statement",
-          "named": true
-        },
-        {
-          "type": "select_case_statement",
-          "named": true
-        },
-        {
-          "type": "stop_statement",
-          "named": true
-        },
-        {
-          "type": "variable_declaration",
-          "named": true
-        },
-        {
-          "type": "while_statement",
-          "named": true
-        },
-        {
-          "type": "with_statement",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "property_set_definition",
-    "named": true,
-    "fields": {
-      "modifier": {
-        "multiple": false,
-        "required": false,
-        "types": [
-          {
-            "type": "access_modifier",
-            "named": true
-          }
-        ]
-      },
-      "name": {
-        "multiple": false,
-        "required": true,
-        "types": [
-          {
-            "type": "identifier",
-            "named": true
-          }
-        ]
-      }
-    },
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "assignment_statement",
-          "named": true
-        },
-        {
-          "type": "call_statement",
-          "named": true
-        },
-        {
-          "type": "const_declaration",
-          "named": true
-        },
-        {
-          "type": "do_statement",
-          "named": true
-        },
-        {
-          "type": "empty_statement",
-          "named": true
-        },
-        {
-          "type": "erase_statement",
-          "named": true
-        },
-        {
-          "type": "error_statement",
-          "named": true
-        },
-        {
-          "type": "exit_statement",
-          "named": true
-        },
-        {
-          "type": "for_each_statement",
-          "named": true
-        },
-        {
-          "type": "for_statement",
-          "named": true
-        },
-        {
-          "type": "goto_statement",
-          "named": true
-        },
-        {
-          "type": "if_statement",
-          "named": true
-        },
-        {
-          "type": "label_statement",
-          "named": true
-        },
-        {
-          "type": "line_continuation_statement",
-          "named": true
-        },
-        {
-          "type": "on_error_statement",
-          "named": true
-        },
-        {
-          "type": "parameter_list",
-          "named": true
-        },
-        {
-          "type": "redim_statement",
-          "named": true
-        },
-        {
-          "type": "select_case_statement",
-          "named": true
-        },
-        {
-          "type": "stop_statement",
-          "named": true
-        },
-        {
-          "type": "variable_declaration",
-          "named": true
-        },
-        {
-          "type": "while_statement",
-          "named": true
-        },
-        {
-          "type": "with_statement",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "redim_statement",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": true,
-      "types": [
-        {
-          "type": "redim_target",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "redim_target",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": true,
-      "types": [
-        {
-          "type": "array_dimensions",
-          "named": true
-        },
-        {
-          "type": "identifier",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "select_case_statement",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": true,
-      "types": [
-        {
-          "type": "case_clause",
-          "named": true
-        },
-        {
-          "type": "case_else_clause",
-          "named": true
-        },
-        {
-          "type": "expression",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
     "type": "source_file",
     "named": true,
     "root": true,
@@ -2035,43 +748,19 @@
           "named": true
         },
         {
-          "type": "attribute_statement",
-          "named": true
-        },
-        {
           "type": "call_statement",
           "named": true
         },
         {
-          "type": "const_declaration",
+          "type": "const_statement",
           "named": true
         },
         {
-          "type": "do_statement",
-          "named": true
-        },
-        {
-          "type": "empty_statement",
-          "named": true
-        },
-        {
-          "type": "enum_definition",
-          "named": true
-        },
-        {
-          "type": "erase_statement",
-          "named": true
-        },
-        {
-          "type": "error_statement",
+          "type": "dim_statement",
           "named": true
         },
         {
           "type": "exit_statement",
-          "named": true
-        },
-        {
-          "type": "for_each_statement",
           "named": true
         },
         {
@@ -2095,59 +784,11 @@
           "named": true
         },
         {
-          "type": "line_continuation_statement",
-          "named": true
-        },
-        {
-          "type": "on_error_statement",
-          "named": true
-        },
-        {
-          "type": "option_statement",
-          "named": true
-        },
-        {
-          "type": "property_get_definition",
-          "named": true
-        },
-        {
-          "type": "property_let_definition",
-          "named": true
-        },
-        {
-          "type": "property_set_definition",
-          "named": true
-        },
-        {
-          "type": "redim_statement",
-          "named": true
-        },
-        {
-          "type": "select_case_statement",
-          "named": true
-        },
-        {
           "type": "stop_statement",
           "named": true
         },
         {
           "type": "sub_definition",
-          "named": true
-        },
-        {
-          "type": "type_definition",
-          "named": true
-        },
-        {
-          "type": "variable_declaration",
-          "named": true
-        },
-        {
-          "type": "while_statement",
-          "named": true
-        },
-        {
-          "type": "with_statement",
           "named": true
         }
       ]
@@ -2162,16 +803,6 @@
     "type": "sub_definition",
     "named": true,
     "fields": {
-      "modifier": {
-        "multiple": false,
-        "required": false,
-        "types": [
-          {
-            "type": "access_modifier",
-            "named": true
-          }
-        ]
-      },
       "name": {
         "multiple": false,
         "required": true,
@@ -2188,6 +819,10 @@
       "required": false,
       "types": [
         {
+          "type": "access_modifier",
+          "named": true
+        },
+        {
           "type": "assignment_statement",
           "named": true
         },
@@ -2196,31 +831,15 @@
           "named": true
         },
         {
-          "type": "const_declaration",
+          "type": "const_statement",
           "named": true
         },
         {
-          "type": "do_statement",
-          "named": true
-        },
-        {
-          "type": "empty_statement",
-          "named": true
-        },
-        {
-          "type": "erase_statement",
-          "named": true
-        },
-        {
-          "type": "error_statement",
+          "type": "dim_statement",
           "named": true
         },
         {
           "type": "exit_statement",
-          "named": true
-        },
-        {
-          "type": "for_each_statement",
           "named": true
         },
         {
@@ -2240,39 +859,11 @@
           "named": true
         },
         {
-          "type": "line_continuation_statement",
-          "named": true
-        },
-        {
-          "type": "on_error_statement",
-          "named": true
-        },
-        {
           "type": "parameter_list",
           "named": true
         },
         {
-          "type": "redim_statement",
-          "named": true
-        },
-        {
-          "type": "select_case_statement",
-          "named": true
-        },
-        {
           "type": "stop_statement",
-          "named": true
-        },
-        {
-          "type": "variable_declaration",
-          "named": true
-        },
-        {
-          "type": "while_statement",
-          "named": true
-        },
-        {
-          "type": "with_statement",
           "named": true
         }
       ]
@@ -2288,58 +879,6 @@
       "types": [
         {
           "type": "identifier",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "type_definition",
-    "named": true,
-    "fields": {
-      "name": {
-        "multiple": false,
-        "required": true,
-        "types": [
-          {
-            "type": "identifier",
-            "named": true
-          }
-        ]
-      }
-    },
-    "children": {
-      "multiple": true,
-      "required": true,
-      "types": [
-        {
-          "type": "type_field",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "type_field",
-    "named": true,
-    "fields": {
-      "name": {
-        "multiple": false,
-        "required": true,
-        "types": [
-          {
-            "type": "identifier",
-            "named": true
-          }
-        ]
-      }
-    },
-    "children": {
-      "multiple": false,
-      "required": false,
-      "types": [
-        {
-          "type": "type",
           "named": true
         }
       ]
@@ -2370,28 +909,9 @@
           {
             "type": "-",
             "named": false
-          },
-          {
-            "type": "Not",
-            "named": false
           }
         ]
       }
-    }
-  },
-  {
-    "type": "variable_declaration",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": true,
-      "types": [
-        {
-          "type": "variable_declarator",
-          "named": true
-        }
-      ]
     }
   },
   {
@@ -2419,204 +939,6 @@
         },
         {
           "type": "type",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "while_statement",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": true,
-      "types": [
-        {
-          "type": "assignment_statement",
-          "named": true
-        },
-        {
-          "type": "call_statement",
-          "named": true
-        },
-        {
-          "type": "const_declaration",
-          "named": true
-        },
-        {
-          "type": "do_statement",
-          "named": true
-        },
-        {
-          "type": "empty_statement",
-          "named": true
-        },
-        {
-          "type": "erase_statement",
-          "named": true
-        },
-        {
-          "type": "error_statement",
-          "named": true
-        },
-        {
-          "type": "exit_statement",
-          "named": true
-        },
-        {
-          "type": "expression",
-          "named": true
-        },
-        {
-          "type": "for_each_statement",
-          "named": true
-        },
-        {
-          "type": "for_statement",
-          "named": true
-        },
-        {
-          "type": "goto_statement",
-          "named": true
-        },
-        {
-          "type": "if_statement",
-          "named": true
-        },
-        {
-          "type": "label_statement",
-          "named": true
-        },
-        {
-          "type": "line_continuation_statement",
-          "named": true
-        },
-        {
-          "type": "on_error_statement",
-          "named": true
-        },
-        {
-          "type": "redim_statement",
-          "named": true
-        },
-        {
-          "type": "select_case_statement",
-          "named": true
-        },
-        {
-          "type": "stop_statement",
-          "named": true
-        },
-        {
-          "type": "variable_declaration",
-          "named": true
-        },
-        {
-          "type": "while_statement",
-          "named": true
-        },
-        {
-          "type": "with_statement",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "with_statement",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": true,
-      "types": [
-        {
-          "type": "assignment_statement",
-          "named": true
-        },
-        {
-          "type": "call_statement",
-          "named": true
-        },
-        {
-          "type": "const_declaration",
-          "named": true
-        },
-        {
-          "type": "do_statement",
-          "named": true
-        },
-        {
-          "type": "empty_statement",
-          "named": true
-        },
-        {
-          "type": "erase_statement",
-          "named": true
-        },
-        {
-          "type": "error_statement",
-          "named": true
-        },
-        {
-          "type": "exit_statement",
-          "named": true
-        },
-        {
-          "type": "expression",
-          "named": true
-        },
-        {
-          "type": "for_each_statement",
-          "named": true
-        },
-        {
-          "type": "for_statement",
-          "named": true
-        },
-        {
-          "type": "goto_statement",
-          "named": true
-        },
-        {
-          "type": "if_statement",
-          "named": true
-        },
-        {
-          "type": "label_statement",
-          "named": true
-        },
-        {
-          "type": "line_continuation_statement",
-          "named": true
-        },
-        {
-          "type": "on_error_statement",
-          "named": true
-        },
-        {
-          "type": "redim_statement",
-          "named": true
-        },
-        {
-          "type": "select_case_statement",
-          "named": true
-        },
-        {
-          "type": "stop_statement",
-          "named": true
-        },
-        {
-          "type": "variable_declaration",
-          "named": true
-        },
-        {
-          "type": "while_statement",
-          "named": true
-        },
-        {
-          "type": "with_statement",
           "named": true
         }
       ]
@@ -2659,10 +981,6 @@
     "named": false
   },
   {
-    "type": "0",
-    "named": false
-  },
-  {
     "type": ":",
     "named": false
   },
@@ -2691,310 +1009,6 @@
     "named": false
   },
   {
-    "type": "And",
-    "named": false
-  },
-  {
-    "type": "Any",
-    "named": false
-  },
-  {
-    "type": "As",
-    "named": false
-  },
-  {
-    "type": "Attribute",
-    "named": false
-  },
-  {
-    "type": "Base",
-    "named": false
-  },
-  {
-    "type": "Binary",
-    "named": false
-  },
-  {
-    "type": "Boolean",
-    "named": false
-  },
-  {
-    "type": "ByRef",
-    "named": false
-  },
-  {
-    "type": "ByVal",
-    "named": false
-  },
-  {
-    "type": "Byte",
-    "named": false
-  },
-  {
-    "type": "Call",
-    "named": false
-  },
-  {
-    "type": "Case",
-    "named": false
-  },
-  {
-    "type": "Compare",
-    "named": false
-  },
-  {
-    "type": "Const",
-    "named": false
-  },
-  {
-    "type": "Currency",
-    "named": false
-  },
-  {
-    "type": "Database",
-    "named": false
-  },
-  {
-    "type": "Date",
-    "named": false
-  },
-  {
-    "type": "Dim",
-    "named": false
-  },
-  {
-    "type": "Do",
-    "named": false
-  },
-  {
-    "type": "Double",
-    "named": false
-  },
-  {
-    "type": "Each",
-    "named": false
-  },
-  {
-    "type": "Else",
-    "named": false
-  },
-  {
-    "type": "ElseIf",
-    "named": false
-  },
-  {
-    "type": "End",
-    "named": false
-  },
-  {
-    "type": "Enum",
-    "named": false
-  },
-  {
-    "type": "Erase",
-    "named": false
-  },
-  {
-    "type": "Error",
-    "named": false
-  },
-  {
-    "type": "Exit",
-    "named": false
-  },
-  {
-    "type": "Explicit",
-    "named": false
-  },
-  {
-    "type": "False",
-    "named": false
-  },
-  {
-    "type": "For",
-    "named": false
-  },
-  {
-    "type": "Friend",
-    "named": false
-  },
-  {
-    "type": "Function",
-    "named": false
-  },
-  {
-    "type": "Get",
-    "named": false
-  },
-  {
-    "type": "Global",
-    "named": false
-  },
-  {
-    "type": "GoTo",
-    "named": false
-  },
-  {
-    "type": "If",
-    "named": false
-  },
-  {
-    "type": "In",
-    "named": false
-  },
-  {
-    "type": "Integer",
-    "named": false
-  },
-  {
-    "type": "Let",
-    "named": false
-  },
-  {
-    "type": "Like",
-    "named": false
-  },
-  {
-    "type": "Long",
-    "named": false
-  },
-  {
-    "type": "LongPtr",
-    "named": false
-  },
-  {
-    "type": "Loop",
-    "named": false
-  },
-  {
-    "type": "Mod",
-    "named": false
-  },
-  {
-    "type": "Next",
-    "named": false
-  },
-  {
-    "type": "Not",
-    "named": false
-  },
-  {
-    "type": "Object",
-    "named": false
-  },
-  {
-    "type": "On",
-    "named": false
-  },
-  {
-    "type": "Option",
-    "named": false
-  },
-  {
-    "type": "Or",
-    "named": false
-  },
-  {
-    "type": "Preserve",
-    "named": false
-  },
-  {
-    "type": "Private",
-    "named": false
-  },
-  {
-    "type": "Property",
-    "named": false
-  },
-  {
-    "type": "Public",
-    "named": false
-  },
-  {
-    "type": "ReDim",
-    "named": false
-  },
-  {
-    "type": "Resume",
-    "named": false
-  },
-  {
-    "type": "Select",
-    "named": false
-  },
-  {
-    "type": "Set",
-    "named": false
-  },
-  {
-    "type": "Single",
-    "named": false
-  },
-  {
-    "type": "Static",
-    "named": false
-  },
-  {
-    "type": "Step",
-    "named": false
-  },
-  {
-    "type": "Stop",
-    "named": false
-  },
-  {
-    "type": "String",
-    "named": false
-  },
-  {
-    "type": "Sub",
-    "named": false
-  },
-  {
-    "type": "Text",
-    "named": false
-  },
-  {
-    "type": "Then",
-    "named": false
-  },
-  {
-    "type": "To",
-    "named": false
-  },
-  {
-    "type": "True",
-    "named": false
-  },
-  {
-    "type": "Type",
-    "named": false
-  },
-  {
-    "type": "Until",
-    "named": false
-  },
-  {
-    "type": "Variant",
-    "named": false
-  },
-  {
-    "type": "Wend",
-    "named": false
-  },
-  {
-    "type": "While",
-    "named": false
-  },
-  {
-    "type": "With",
-    "named": false
-  },
-  {
-    "type": "Xor",
-    "named": false
-  },
-  {
     "type": "\\",
     "named": false
   },
@@ -3003,17 +1017,17 @@
     "named": false
   },
   {
-    "type": "_",
-    "named": false
+    "type": "bare_identifier",
+    "named": true
+  },
+  {
+    "type": "bracketed_identifier",
+    "named": true
   },
   {
     "type": "comment",
     "named": true,
     "extra": true
-  },
-  {
-    "type": "identifier",
-    "named": true
   },
   {
     "type": "nothing_literal",
