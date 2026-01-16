@@ -1,4 +1,4 @@
-; Increase indent after these
+; Increase indent after these constructs
 [
   (sub_definition)
   (function_definition)
@@ -20,12 +20,12 @@
   (with_statement)
 ] @indent.begin
 
-; Decrease indent at these endings
+; Decrease indent at these endings (now named keyword tokens)
 [
-  "End"
-  "Loop"
-  "Wend"
-  "Next"
+  (kw_end)
+  (kw_loop)
+  (kw_wend)
+  (kw_next)
 ] @indent.end
 
 ; Labels outdent to column 0

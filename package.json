@@ -1,15 +1,17 @@
 {
-  "name": "tree-sitter-vba",
-  "version": "0.1.0",
-  "description": "Tree-sitter grammar for VBA",
-  "repository": "https://github.com/hayderhassan/tree-sitter-vba",
-  "license": "MIT",
-  "author": "Hayder Hassan",
-  "main": "grammar.js",
-  "scripts": {
-    "build": "tree-sitter generate && tree-sitter build"
-  },
-  "devDependencies": {
-    "tree-sitter-cli": "^0.25.8"
-  }
+    "name": "tree-sitter-vba",
+    "version": "0.1.0",
+    "description": "Tree-sitter grammar for VBA",
+    "repository": "https://github.com/hayderhassan/tree-sitter-vba",
+    "license": "MIT",
+    "author": "Hayder Hassan",
+    "main": "grammar.js",
+    "scripts": {
+        "generate": "tree-sitter generate",
+        "build": "tree-sitter generate && tree-sitter build",
+        "test": "tree-sitter test"
+    },
+    "devDependencies": {
+        "tree-sitter-cli": "^0.25.8"
+    }
 }
