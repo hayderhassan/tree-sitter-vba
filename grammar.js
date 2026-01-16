@@ -367,6 +367,7 @@ module.exports = grammar({
         ),
 
         const_declaration: $ => seq(
+            optional(choice("Public", "Private", "Global")),
             "Const",
             commaSep1($.const_declarator),
             $._newline

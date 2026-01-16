@@ -1729,6 +1729,31 @@
       "type": "SEQ",
       "members": [
         {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "CHOICE",
+              "members": [
+                {
+                  "type": "STRING",
+                  "value": "Public"
+                },
+                {
+                  "type": "STRING",
+                  "value": "Private"
+                },
+                {
+                  "type": "STRING",
+                  "value": "Global"
+                }
+              ]
+            },
+            {
+              "type": "BLANK"
+            }
+          ]
+        },
+        {
           "type": "STRING",
           "value": "Const"
         },
