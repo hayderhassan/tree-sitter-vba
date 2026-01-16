@@ -1,0 +1,36 @@
+{
+    "$schema": "https://tree-sitter.github.io/tree-sitter/assets/schemas/config.schema.json",
+    "grammars": [
+        {
+            "name": "vba",
+            "camelcase": "VBA",
+            "title": "VBA",
+            "scope": "source.vba",
+            "file-types": [
+                "frm",
+                "bas",
+                "cls"
+            ],
+            "injection-regex": "^vba$",
+            "class-name": "TreeSitterVba"
+        }
+    ],
+    "metadata": {
+        "version": "0.1.0",
+        "license": "MIT",
+        "description": "Tree-sitter grammar for VBA",
+        "authors": [
+            {
+                "name": "Hayder Hassan",
+                "email": "hayderh@gmail.com",
+                "url": "https://github.com/hayderhassan"
+            }
+        ],
+        "links": {
+            "repository": "https://github.com/hayderhassan/tree-sitter-vba"
+        }
+    },
+    "bindings": {
+        "c": true
+    }
+}
